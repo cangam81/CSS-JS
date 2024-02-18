@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Bootstrap</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <script src="lib/bootstrap/bootstrap.bundle.js"></script>
+    <style>
+        img{
+            width:100%;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <div id="contenedor">
+        <header>
+            <!-- <h1>Países del mundo</h1> -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/img/europa/españa/baner/molinos-spain.jpg" class="d-block w-100" alt="Molinos de Viento (La Mancha - España)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>España</h5>
+                      <p>Molinos en la región española de La Mancha</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img/asia/baner/farolillos-china.jpg" class="d-block w-100" alt="Farolillos rojos en China">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>China</h5>
+                      <p>Decoración del año nuevo en China</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img/asia/japon/japon(1).jpg" class="d-block w-100" alt="Paisaje">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Paisaje nevado en Japón</h5>
+                      <p>Pabellón típico japonés en paisaje helado</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      América
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Canadá</a></li>
+                      <li><a class="dropdown-item" href="#">México</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Venezuela</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Google</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <main class="container-fluid">
+            <section id="europa" class="row">
+                <h2>Europa</h2>
+                <article id="hispania" class="col-lg-2 col-md-4">
+                    <h3>España</h3>
+                    <figure>
+                        <img src="img/img/europa/españa/españa(4).jpg" alt="Molinos de viento">
+                        <figcaption>Molinos de viento en La Mancha (España)</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, mollitia enim. Iste nemo voluptate corporis fuga recusandae blanditiis nihil rerum sint temporibus quod. Omnis quaerat velit corrupti, dolorum asperiores deleniti.</p>
+                </article>
+                <!-- article#italia>h3{Italia}+figure>img+figcaption^p>lorem> -->
+                <article id="italia" class="col-lg-2 col-md-4">
+                    <h3>Italia</h3>
+                    <figure>
+                        <img src="img/img/europa/italia/italia(3).jpg" alt="Venecia">
+                        <figcaption>Canales de Venecia (Italia)</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aspernatur beatae, accusantium ut enim exercitationem vero officia sunt quaerat est minima laudantium repudiandae saepe, asperiores velit dolor architecto voluptate temporibus!</p>
+                </article>
+                <article id="francia" class="col-lg-2 col-md-4">
+                    <h3>Francia</h3>
+                    <figure>
+                        <img src="img/img/europa/francia/francia(2).jpg" alt="Monte Saint Michel">
+                        <figcaption>Mount Saint Michel</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque est distinctio corporis, vitae quod, quasi culpa facilis adipisci, cum minus animi commodi doloribus omnis deserunt ratione dolore nam consequuntur. Officiis?</p>
+                </article>
+                <article id="grecia" class="col-lg-2 col-md-4">
+                    <h3>Grecia</h3>
+                    <figure>
+                        <img src="img/img/europa/grecia/grecia (5).jpg" alt="El Partenón">
+                        <figcaption>El Partenón (Grecia)</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt fugit omnis nam eligendi ad pariatur repellat sint et perferendis, fugiat nemo libero quaerat nihil harum similique expedita placeat excepturi minima!</p>
+                </article>
+                <article id="escocia" class="col-lg-2 col-md-4">
+                    <h3>Escocia</h3>
+                    <figure>
+                        <img src="img/img/europa/reino-unido/escocia/escocia(5).jpg" alt="Tierras Altas">
+                        <figcaption>Paisaje de las Tierras Altas (Escocia)</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus vitae explicabo tempora quasi eligendi. Eius, necessitatibus suscipit. Hic animi, perspiciatis, minus expedita obcaecati eaque tempora velit quod delectus ex molestiae?</p>
+                </article>
+                <article id="inglaterra" class="col-lg-2 col-md-4">
+                    <h3>Inglaterra</h3>
+                    <figure>
+                        <img src="img/img/europa/reino-unido/inglaterra/inglaterra(3).jpg" alt="Torre de Londres">
+                        <figcaption>Inglaterra (Inglaterra)</figcaption>
+                    </figure>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum, cumque dicta nam optio sequi quo odio minima eligendi distinctio vel consectetur adipisci aperiam eveniet, dolorum eaque voluptate. Reprehenderit, totam!</p>
+                </article>
+            </section>
+            <!-- section#america>h2{América}+(article#canada>h3{Canadá}+figure>img+figcaption^p>lorem)*4 -->
+            <section id="america" class="row">
+                <h2>América</h2>
+                <article id="canada" class="col-lg-3 col-md-6">
+                    <h3>Canadá</h3>
+                    <figure>
+                        <img src="img/img/america/canada/canada(4).jpg" alt="Ciudad de Toronto">
+                        <figcaption>Torre en la ciudad de Toronto</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti possimus modi commodi quis autem voluptatem. Ipsam blanditiis voluptatibus omnis soluta. Suscipit qui repudiandae accusamus voluptas, voluptate rerum quod deleniti eaque.</p>
+                </article>
+                <article id="argentina" class="col-lg-3 col-md-6">
+                    <h3>Argentina</h3>
+                    <figure>
+                        <img src="img/img/america/argentina/argentina (4).jpg" alt="Monte nevado en Patagonia">
+                        <figcaption>Monte nevado en Patagonia</figcaption>
+                    </figure>
+                    <p>Nisi, labore ut! Commodi similique quo doloribus recusandae expedita in quisquam libero harum amet nulla eum possimus architecto, hic provident est natus quis magnam consectetur, officiis voluptatibus, maxime unde? Quibusdam?</p>
+                </article>
+                <article id="usa" class="col-lg-3 col-md-6">
+                    <h3>Estados Unidos</h3>
+                    <figure>
+                        <img src="img/img/europa/reino-unido/inglaterra/inglaterra(1).jpg" alt="Bisonte">
+                        <figcaption>Bisonte en las grandes praderas americanas (USA)</figcaption>
+                    </figure>
+                    <p>Totam est aliquam esse? Possimus itaque odit illo exercitationem cumque recusandae saepe repellat! Quis cupiditate quisquam aspernatur error, repellendus distinctio itaque eius voluptate illum eos vel dolore ea dicta deleniti!</p>
+                </article>
+                <article id="mexico" class="col-lg-3 col-md-6">
+                    <h3>México</h3>
+                    <figure>
+                        <img src="img/img/america/mexico/mexico(1).jpg" alt="Pirámide maya">
+                        <figcaption>Pirámide maya en la selva mexicana</figcaption>
+                    </figure>
+                    <p>Enim error a omnis suscipit libero fuga ut accusantium? Sunt quae esse fugit ratione nisi inventore pariatur voluptatem ut corporis! Labore reiciendis illum aliquid, perferendis recusandae ad saepe cum consequuntur.</p>
+                </article>
+            </section>
+            <section id="asia" class="row">
+                <h2>Asia</h2>
+                <article id="japon" class="col-md-6">
+                    <h3>Japón</h3>
+                    <figure>
+                        <img src="img/img/asia/japon/japon(1).jpg" alt="Paisaje helado en Japón">
+                        <figcaption>Pabellón en paisaje helado (Japón)</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium, repellendus ullam nostrum sequi laborum aliquid provident nisi quo dolor mollitia voluptas natus, sed praesentium incidunt obcaecati totam beatae eius?</p>
+                </article>
+                <article id="china" class="col-md-6">
+                    <h3>China</h3>
+                    <figure>
+                        <img src="img/img/asia/china/china(2).jpg" alt="Farolillos rojos">
+                        <figcaption>Farolillos rojos en China</figcaption>
+                    </figure>
+                    <p>Error doloribus aliquid, qui placeat laboriosam animi dolor enim numquam optio adipisci odio, eos rerum ducimus? Accusantium, recusandae dolor illum repellendus laudantium, veniam quas assumenda iure omnis aspernatur debitis aliquam.</p>
+                </article>
+            </section>
+            <section id="africa" class="row">
+                <h2>África</h2>
+                <article id="tanzania" class="col-lg-3 col-md-6">
+                    <h3>Tanzania</h3>
+                    <figure>
+                        <img src="img/img/africa/tanzania/tanzania (4).jpg" alt="Jirafas">
+                        <figcaption>Atardecer en la sabana</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio aut facere placeat exercitationem! Quis sint commodi aliquam id laborum assumenda exercitationem tempore animi modi quia, quam quas, vitae tenetur.</p>
+                </article>
+                <article id="kenia" class="col-lg-3 col-md-6">
+                    <h3>Kenia</h3>
+                    <figure>
+                        <img src="img/img/africa/kenia/kenia(5).jpg" alt="Ñus cruzando el río Mara">
+                        <figcaption>Ñus cruzando el río Mara</figcaption>
+                    </figure>
+                    <p>Aliquam nulla sunt nihil. Ipsum harum facilis beatae aut quas dolorum, quo qui nulla dicta totam adipisci repellendus eveniet fugit dolores molestias et ipsa voluptate eligendi! Earum odio cumque voluptatum.</p>
+                </article>
+                <article id="sudafrica" class="col-lg-3 col-md-6">
+                    <h3>Sudáfrica</h3>
+                    <figure>
+                        <img src="img/img/africa/sudafrica/sudafrica(2).jpg" alt="Cebras">
+                        <figcaption>Cebras en un parque nacional de Sudáfrica</figcaption>
+                    </figure>
+                    <p>Cupiditate eos voluptatum facere modi quod doloremque dolor earum nesciunt autem, pariatur quasi asperiores est assumenda voluptas obcaecati! Expedita aliquid beatae nesciunt natus maiores placeat et quasi, neque pariatur hic!</p>
+                </article>
+                <article id="marruecos" class="col-lg-3 col-md-6">
+                    <h3>Marruecos</h3>
+                    <figure>
+                        <img src="img/img/africa/marruecos/marruecos(3).jpg" alt="Fortaleza en el Sáhara">
+                        <figcaption>Fortaleza en el Sáhara</figcaption>
+                    </figure>
+                    <p>Corrupti praesentium ex quidem vitae eum inventore fugit suscipit quo ut adipisci quasi iusto ab quos possimus, error molestiae voluptate voluptatum earum in ea. Itaque commodi suscipit aspernatur dolore consequuntur.</p>
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
